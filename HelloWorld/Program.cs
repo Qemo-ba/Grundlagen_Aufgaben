@@ -1,4 +1,6 @@
-﻿namespace HelloWorld
+﻿using ConsoleApp1;
+
+namespace HelloWorld
 {
     internal class Program
     {
