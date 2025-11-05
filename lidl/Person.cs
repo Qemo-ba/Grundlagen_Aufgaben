@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lidl
 {
-    public abstract class Person 
+    public abstract class Person : IPublish
     {
         public string Name { get; set; }
         public string Vorname { get; set; }
@@ -32,5 +32,6 @@ namespace lidl
         }
 
         public abstract void Trage();
+        public abstract void publiziere(string text);
     }
 }

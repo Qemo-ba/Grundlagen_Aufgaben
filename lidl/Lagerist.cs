@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lidl
 {
-    internal class Lagerist : Person
+    internal class Lagerist : MuendigePerson
     {
         public double Groesse { get; set; }
 
@@ -24,6 +24,15 @@ namespace lidl
         public override void Trage()
         {
             Console.WriteLine($"Ich als lagerist {Name + " " + Vorname} trage mittel");
+        }
+        public override void publiziere(string text)
+        {
+            Console.WriteLine($"Lagerist publiziert {text}");
+        }
+
+        public override void zahle(int betrag)
+        {
+            Console.WriteLine($"Lagerist bezahlt den Betrag von {betrag} per Monatsabrechnung.");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,11 @@ namespace lidl
         public override void Trage()
         {
             Console.WriteLine($"{ Name + " " + Vorname} alt: { Alter} trägt nichts.");
+        }
+
+        public override void publiziere(string text)
+        {
+            Console.WriteLine($"Kind publiziert {text}");
         }
     }
 

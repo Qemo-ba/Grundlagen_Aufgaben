@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lidl
 {
-    internal class Kunde : Person
+    internal class Kunde : MuendigePerson
     {
         public double umsatz = 0;
 
@@ -26,6 +26,10 @@ namespace lidl
         public override void Trage()
         {
             Console.WriteLine($"ich als kunde {Name + " " + Vorname} trägt mittel");
+        }
+        public override void publiziere(string text)
+        {
+           Console.WriteLine($"Kunde publiziert {text}");
         }
 
         public void TestKey()

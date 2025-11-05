@@ -35,6 +35,6 @@ namespace getset
 
         public int Width4 { set; private get; }
 
-        public int Height1 
+        public int Height1 { set { height = value; } } 
     }
 }
