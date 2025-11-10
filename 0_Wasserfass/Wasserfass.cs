@@ -15,15 +15,21 @@ namespace _0_Wasserfass
 
      
         
-        public void Befüllen(int menge)
+        public int Befüllen(int menge)
         {
             if (menge > 0) 
-            { 
-                if (Füllstand + menge <= Maximalpegel) 
+            {
+                if (Füllstand + menge <= Maximalpegel)
                 { 
-                    Füllstand += menge;
+                    return 0;
                 }
+                if (Füllstand + menge > Maximalpegel)
+                { 
+                    return 1;
+                }
+             return 2;
             }
+            return 3;
         }
 
         public void Entnehmen(int menge)
